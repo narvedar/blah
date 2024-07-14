@@ -1,0 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    /* box-sizing: border-box; */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    min-height: 100vh;
+    /* background-color: rgba(214, 214, 209, 0.951); */
+    background-color: black;
+    /* background-color: rgb(207, 204, 197); */
+}
+.sec_one{
+    background-color: black;
+    overflow-x: hidden;
+}
+.beigebox2{
+    background-color:rgba(135, 104, 104) ;
+    height:38rem;
+    width:260rem;
+    position: absolute;
+    bottom:40.7rem;
+    right:0;
+    transform: rotate(14deg);
+}
+
+nav ul{
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height:50px;
+    z-index: 1;
+}
+nav a{
+    color:white;
+    height:100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width:250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.sidebar li{
+    width:100%;
+}
+.sidebar a{
+    width:100%;
+}
+.menuButton{
+    display: none;
+}
+.closeButton{
+    cursor: pointer;
+}
+.wrapper{
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imageWrapper{
+    height:25rem;
+    width:20rem;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 1;
+    
+}
+.imageWrapper img{
+    object-fit: cover; 
+    height: 100%;
+    width: 100%;
+    
+}
+.greetText{
+    font-size: 8rem;
+    color:white;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 1;
+}
+.sec_two{
+    /* background-color:  rgb(207, 204, 197); */
+    background-color: black;
+    position: relative;
+    height:75vh;
+}
+
+.color_box{
+    height:20rem;
+    width:20rem;
+    background-color:rgba(135, 104, 104, 0.959);
+     
+}
+.aboutWrapper{
+    color:white;
+    display:flex;
+    position: absolute;
+    top:5rem;
+    left:5rem;
+}
+.image2{
+    height:20rem;
+    width:20rem;
+    margin-right: 6%;
+    overflow: hidden;
+   
+    
+}
+.image2 img{
+    object-fit: cover; 
+    height: 100%;
+    width: 100%;
+    
+}
+.about{
+    width:50%;
+    margin: 0 8%;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.about h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:4rem;
+    margin-bottom: 2rem;
+    color:rgba(135, 104, 104, 0.959);
+}
+.sec_three{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    color:white;
+}
+.sec_three h1{
+    text-align:center;
+    margin-top:5rem;
+    font-size:4rem;
+    font-weight:400;
+    color:rgba(135, 104, 104, 0.959);
+
+}
+.sec_three p{
+    text-align:center;
+    margin:1rem 0;
+    font-size:1.5rem;
+}
+.skillWrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+.skillWrapper h2{
+    text-align: center;
+    font-size: 2rem;
+    margin:1rem 0;
+    font-weight: 400;
+    
+}
+.skillWrapper h3{
+    font-size: 1.5rem;
+    margin:1rem 0;
+    font-weight: 400;
+    
+}
+.skillWrapper li{
+    font-size:1.3rem;
+}
+
+.skillbox{
+    color: white;
+    background-color:rgba(135, 104, 104, 0.98);
+    height:fit-content;
+    padding:3rem;
+    border-radius: 25px;
+    width:20%;
+}
+.softskills{
+    line-height: 1.7;
+}
+.front_back{
+    display: flex;
+}
+.skill{
+    margin:0 1rem;
+}
+.sec_four{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    margin-top:6rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.sec_four h1{
+    text-align:center;
+    margin-top:2rem;
+    font-size:4rem;
+    font-weight:400;
+    color:rgba(135, 104, 104, 0.959);
+}
+.proj_p{
+    text-align:center;
+    margin:1rem 0;
+    font-size:1.5rem;
+}
+.beigebox{
+    background-color:rgba(135, 104, 104, 0.8) ;
+    height:35rem;
+    width:180rem;
+    position: absolute;
+    top:30rem;
+    left:0;
+    transform: rotate(16deg);
+}
+
+.projects {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.projects h2{
+    font-size: 1.4rem;
+    margin:1rem 0;
+    font-weight: 400;
+}
+.projectBox{
+    color: white;
+    height:20.5rem;
+    width:20.5rem;
+    border-radius: 12px;
+    /* background-color:rgb(207, 204, 197); */
+    background-color:rgba(188, 160, 160, 0.5);
+    z-index: 1;
+    margin:4rem 0;
+}
+
+.projectBox h2,p{
+    margin:1rem;
+}
+.projectBox a{
+    text-decoration: none;
+    color:white;
+}
+.projectBox a:hover{
+    color:rgb(201, 201, 201);
+}
+
+.sec_five{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 4rem;
+    overflow-x: hidden;
+    color: white;
+  
+    
+}
+.sec_five h1{
+    text-align:center;
+    margin-top:5rem;
+    font-size:4rem;
+    font-weight:400;
+    color:rgba(135, 104, 104, 0.959);
+}
+.sec_five p{
+    text-align:center;
+    margin:1rem 0;
+    font-size:1.5rem;
+}
+.schools h1{
+    font-size:1.2rem;
+    color: white;
+}
+.schools h3{
+    font-size:1rem;
+    font-weight: 400;
+}
+.Education{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+.schools{
+    text-align: center;
+    color: white;
+    background-color:rgba(135, 104, 104, 0.98) ;
+    height: 16rem;
+    width: 16rem;
+    margin:2rem 6rem;
+}
+.Education .schools:hover{
+    scale:1.1;
+    transition: all 1s ease;
+}
+footer{
+    background-color: black;
+    color:white;
+    
+}
+footer h2{
+    text-align: center;
+    margin-top: 6rem ;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+}
+.awsIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon{
+    margin: 2.5rem 2rem;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+    overflow: hidden;
+}
+.icon:hover{
+    scale:1.1;
+    transition: all ease;
+}
+@media  only screen and (width<=1515px){
+    .beigebox2{
+        height:35rem;
+        width:240rem;
+    }
+    .greetText{
+        font-size: 7rem;
+    }
+    .sec_two{
+        height:66vh;
+    }
+    .about {
+        font-size: 1rem;
+    }
+    .about h1{
+        font-size: 3.5rem;
+    }
+    .sec_three p{
+        font-size:1.3rem;
+    }
+    .sec_three h1{
+        font-size: 3.5rem;
+    }
+
+    .skillWrapper h2{
+        font-size: 1.6rem;
+        margin:0.6rem;
+    }
+    .skillWrapper h3{
+        font-size: 1.3rem;
+        
+    }
+    .skillWrapper li{
+        font-size:1rem;
+    }
+    .sec_four h1{
+        font-size: 3.5rem;
+    }
+    .proj_p{
+        text-align:center;
+        margin:1rem 0;
+        font-size:1.5rem;
+    }
+    .projects h2{
+        font-size: 1.2rem;
+    }
+    .beigebox{
+        height:34rem;
+        width:160rem;
+    }
+    .sec_five p{
+        font-size:1.3rem;
+    }
+    .sec_five h1{
+        font-size: 3.5rem;
+    }
+    .schools h1{
+        font-size:1.2rem;
+    }
+    .schools h3{
+        font-size:1rem;
+    }
+    .imageWrapper{
+        height:21rem;
+        width:16rem;
+    }
+    .image2{
+        height:16rem;
+        width:16rem;
+    }
+    .color_box{
+        height:16rem;
+        width:16rem;
+    }
+    .skillbox{
+        padding:2rem;
+    }
+}
+@media  only screen and (1267px<=width<=1347px){
+   
+    .greetText{
+        font-size: 6.5rem;
+    }
+    .projectBox{
+        height:17.5rem;
+        width:17.5rem;
+    }
+    .schools{
+        height: 14rem;
+        width: 14rem;
+        
+    }
+    .imageWrapper{
+        height:19rem;
+        width:14rem;
+    }
+    .image2{
+        height:15rem;
+        width:15rem;
+    }
+    .color_box{
+        height:15rem;
+        width:15rem;
+    }
+}
+@media  only screen and (width<=1267px){
+    .skillbox{
+        width:21%;
+    }
+    .imageWrapper{
+        height:18rem;
+        width:13rem;
+    }
+    .image2{
+        height:14rem;
+        width:14rem;
+    }
+    .color_box{
+        height:14rem;
+        width:14rem;
+    }
+    .about h1{
+        font-size: 3rem;
+    }
+    .sec_three h1{
+        font-size: 3rem;
+    }
+    .sec_four h1{
+        font-size: 3rem;
+    }
+    .sec_five h1{
+        font-size: 3rem;
+    }
+    .schools h1{
+        font-size:1.2rem;
+    }
+    .projectBox{
+        height:15.5rem;
+        width:15.5rem;
+    }
+}
+@media  only screen and (width<=1199px){
+    .skillWrapper h2{
+        font-size: 1.4rem;
+        margin:0.6rem;
+    }
+    .skillWrapper h3{
+        font-size: 1.1rem;
+        
+    }
+    .skillWrapper li{
+        font-size:0.8rem;
+    }
+}
+@media  only screen and (width<=1031px){
+    .aboutWrapper{
+        position: absolute;
+        top:3rem;
+        left:5rem;
+        
+    }
+    .greetText{
+        font-size: 6rem;
+    }
+    .skillbox{
+        width:22%;
+    }
+}
+@media  only screen and (width<=979px){
+    .beigebox2{
+        height:35rem;
+        width:220rem;
+    }
+    .imageWrapper{
+        height:16rem;
+        width:11rem;
+    }
+    .image2{
+        height:13rem;
+        width:13rem;
+    }
+    .color_box{
+        height:13rem;
+        width:13rem;
+    }
+    .schools{
+        height: 13rem;
+        width: 13rem;
+        
+    }
+    .schools h1{
+        font-size:1rem;
+    }
+    .schools h3{
+        font-size:0.8rem;
+    }
+    .skillbox{
+        width:23%;
+    }
+    .Education{
+        margin-bottom: 1rem;
+    }
+}
+@media  only screen and (width<=941px){
+    .skillbox{
+        width:25%;
+        margin:1.5rem 0;
+    }
+    .skillWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .beigebox2{
+        height:30rem;
+        width:200rem;
+    }
+}
+@media  only screen and (width<=885px){
+    .skillbox{
+        width:40%;
+        
+    }
+    .skillbox li{
+        font-size: 1rem;
+    }
+    .aboutWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .color_box{
+        position: absolute;
+        left:17.9rem;
+        top:0.5rem;
+    }
+    .image2{
+        height:13rem;
+        width:13rem;
+        margin-bottom: 2rem;
+    }
+    .about {
+        font-size: 1rem;
+        width:60%;
+        
+    }
+    .sec_two{
+        margin-top: 2rem;
+        height: 85vh;
+    }
+    .beigebox2{
+        height:38rem;
+        width:155rem;
+        right:15rem;
+        transform: rotate(48deg);
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+    .imageWrapper{
+        height:18rem;
+        width:14.5rem;
+        margin-top: 2rem;
+    }
+    
+}
+@media  only screen and (width<=867px){
+    .about {
+        width:64%;
+    }
+}
+@media  only screen and (width<=820px){
+    .imageWrapper{
+        height:18rem;
+        width:14.5rem;
+        margin-top: 2rem;
+    }
+    .about {
+        width:67%;
+        position: relative;
+        right:2rem;
+    }
+    .color_box{
+        position: absolute;
+        left:16.9rem;
+        height: 12rem;
+        width: 12rem;
+    }
+    .image2{
+       height: 12rem;
+       width: 12rem;
+    }
+    .imageWrapper{
+        height:17rem;
+        width:13.5rem;
+        margin-top: 2rem;
+    }
+}
+@media  only screen and (width<=720px){
+    .color_box{
+        position: absolute;
+        left:14.9rem;
+    }
+    .beigebox2{
+        height:38rem;
+        width:146rem;
+    }
+    .skillbox{
+        width:32%;
+        
+    }
+}
+@media  only screen and (width<=669px){
+    .about{
+        width:70%;
+    }
+    .color_box{
+        position: absolute;
+        left:13.9rem;
+    }
+}
+@media  only screen and (width<=560px){
+    .about{
+        width:70%;
+        font-size: 0.7rem;
+    }
+    .color_box{
+        position: absolute;
+        left:10.9rem;
+    }
+    .skillbox{
+        width:40%;
+        
+    }
+    .sec_three p{
+        font-size: 1.2rem;
+    }
+    .beigebox2{
+        height:38rem;
+        width:140rem;
+        right:12rem;
+    }
+}
+@media only screen and (width<=800px) {
+    .hide{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+}
+@media only screen and (width<=410px){
+    .sidebar{
+        width:80%;
+    }
+    .greetText{
+        font-size: 5rem;
+        margin: 0 4rem;
+    }
+    .beigebox2{
+        height:40rem;
+        width:96rem;
+        right:3rem;
+        transform: rotate(48deg);
+    }
+    .imageWrapper{
+        height:15rem;
+        width:11.5rem;
+    }
+    .about h1{
+        font-size: 3rem;
+    }
+    .color_box{
+        position: absolute;
+        left:5.9rem;
+        height:11rem;
+        width:11rem;
+    }
+    .image2{
+        height:11rem;
+        width:11rem;
+    }
+    .about{
+        width: 80%;
+    }
+    .skillbox{
+        width: 63%;
+    }
+    .sec_three p{
+        font-size:1.1rem;
+    }
+    .sec_three h1{
+        font-size: 3rem;
+    }
+
+    .skillWrapper h2{
+        font-size: 1.3rem;
+    }
+    .skillWrapper h3{
+        font-size: 1.2rem;
+        
+    }
+    .skillWrapper li{
+        font-size:0.8rem;
+    }
+    .sec_four h1{
+        font-size: 3rem;
+    }
+    .proj_p{
+        font-size:1.2rem;
+    }
+    .projects h2{
+        font-size: 1rem;
+    }
+    .projects p{
+        font-size: 0.8rem;
+    }
+    .sec_five p{
+        font-size:1.2rem;
+    }
+    .sec_five h1{
+        font-size: 3rem;
+    }
+    .schools h1{
+        font-size:1rem;
+    }
+    .schools h3{
+        font-size:0.8rem;
+    }
+    footer h2{
+        font-size: 1.2rem;
+    }
+    .icon{
+        font-size: 1rem;
+        margin: 2.5rem 1rem;
+    }
+}  
+@media only screen and (width<=370px){
+    .about{
+        width:85%;
+    }
+    .schools{
+        height: 13rem;
+        width: 13rem;
+        margin: 2rem 3.5rem;
+    }
+    .aboutWrapper{
+        position: absolute;
+        left:3.5rem;
+    }
+    .sec_two{
+        height: 75vh;
+        
+    }
+   
+    .imageWrapper{
+        height:13rem;
+        width:9.5rem;
+    }
+    .color_box{
+        position: absolute;
+        left:5.9rem;
+        height:9rem;
+        width:9rem;
+    }
+    .image2{
+        height:9rem;
+        width:9rem;
+    }
+    .sec_three p{
+       width:80%;
+       margin:1rem 2rem;
+    }
+}
